@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./resources/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5390e558d9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="webpage d-flex flex-column flex-wrap justify-content-between">
+      <!-- webpage TOP -->
+      <div class="webpage-top d-flex">
+        <!-- page left -->
+        <div class="page-left d-flex flex-column">
+          <!-- nav -->
+          <nav class="d-flex flex-column flex-wrap">
+            <ul class="d-flex flex-column flex-wrap">
+              <li class="nav-logo">
+                <!-- <img src="./resources/Spotify logo.svg" alt="" /> -->
+                <img src="./resources/Spotify_Logo_RGB_Green.png" alt="" />
+              </li>
+              <li class="nav-home">
+                <img src="./resources/New folder/home.png" alt="no img" />Home
+              </li>
+              <li class="nav-search">
+                <img src="./resources/fi-rs-search.svg" alt="" />Search
+              </li>
+            </ul>
+          </nav>
+          <!-- page left Library section -->
+          <div class="page-left-library d-flex flex-column">
+            <!-- lib head -->
+            <div
+              class="page-left-lib-head d-flex flex-wrap align-items-center justify-content-between"
+            >
+              <div
+                class="pllh-left-div d-flex flex-wrap align-items-center justify-content-between"
+              >
+                <!-- <img src="./resources/library.svg" alt="no img" /> -->
+                <svg
+                  role="img"
+                  height="24"
+                  width="24"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  data-encore-id="icon"
+                  class="Svg-sc-ytk21e-0 haNxPq"
+                >
+                  <path
+                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+                <p>Your Library</p>
+              </div>
+              <div
+                class="page-left-lib-head-i d-flex flex-wrap align-items-center"
+              >
+                <div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="page-left-lib-buttons d-flex flex-wrap">
+              <button type="button">Playlists</button>
+            </div>
+            <!-- search n sort -->
+            <div
+              class="page-left-lib-search-n-sort d-flex flex-wrap justify-content-between"
+            >
+              <div class="page-left-lib-search-n-sort-i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <select name="" id="">
+                <option value="">Recents</option>
+                <option value="">Recently Added</option>
+                <option value="">Alphabetical</option>
+                <option value="">Creator</option>
+              </select>
+            </div>
+            <!--cards -->
+            <div class="page-left-lib-cards-container d-flex flex-column">
+              <div class="page-left-lib-card d-flex">
+                <img src="./resources/Group 1.svg" alt="Group 1.svg" />
+                <div
+                  class="pllc-info-div d-flex flex-column flex-wrap justify-content-around ms-2"
+                >
+                  <h6>Liked Songs</h6>
+                  <div class="d-flex flex-wrap">
+                    <!-- <i class="fa-solid fa-thumbtack"></i> -->
+                    <svg
+                      class="pinned-svg"
+                      role="img"
+                      height="16"
+                      width="16"
+                      aria-hidden="false"
+                      class="Svg-sc-ytk21e-0 ilPTuf G7aCptcOZswI1fN6dGkO"
+                      viewBox="0 0 16 16"
+                      data-encore-id="icon"
+                    >
+                      <title>Pinned</title>
+                      <path
+                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                      ></path>
+                    </svg>
+                    <p>Playlist</p>
+                    <p>• 51 songs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-left-lib-card d-flex">
+                <img src="./resources/Group 1.svg" alt="Group 1.svg" />
+                <div
+                  class="pllc-info-div d-flex flex-column flex-wrap justify-content-around ms-2"
+                >
+                  <h6>Liked Songs</h6>
+                  <div class="d-flex flex-wrap">
+                    <!-- <i class="fa-solid fa-thumbtack"></i> -->
+                    <svg
+                      class="pinned-svg"
+                      role="img"
+                      height="16"
+                      width="16"
+                      aria-hidden="false"
+                      class="Svg-sc-ytk21e-0 ilPTuf G7aCptcOZswI1fN6dGkO"
+                      viewBox="0 0 16 16"
+                      data-encore-id="icon"
+                    >
+                      <title>Pinned</title>
+                      <path
+                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                      ></path>
+                    </svg>
+                    <p>Playlist</p>
+                    <p>• 51 songs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-left-lib-card d-flex">
+                <img src="./resources/Group 1.svg" alt="Group 1.svg" />
+                <div
+                  class="pllc-info-div d-flex flex-column flex-wrap justify-content-around ms-2"
+                >
+                  <h6>Liked Songs</h6>
+                  <div class="d-flex flex-wrap">
+                    <!-- <i class="fa-solid fa-thumbtack"></i> -->
+                    <svg
+                      class="pinned-svg"
+                      role="img"
+                      height="16"
+                      width="16"
+                      aria-hidden="false"
+                      class="Svg-sc-ytk21e-0 ilPTuf G7aCptcOZswI1fN6dGkO"
+                      viewBox="0 0 16 16"
+                      data-encore-id="icon"
+                    >
+                      <title>Pinned</title>
+                      <path
+                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                      ></path>
+                    </svg>
+                    <p>Playlist</p>
+                    <p>• 51 songs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-left-lib-card d-flex">
+                <img src="./resources/Group 1.svg" alt="Group 1.svg" />
+                <div
+                  class="pllc-info-div d-flex flex-column flex-wrap justify-content-around ms-2"
+                >
+                  <h6>Liked Songs</h6>
+                  <div class="d-flex flex-wrap">
+                    <!-- <i class="fa-solid fa-thumbtack"></i> -->
+                    <svg
+                      class="pinned-svg"
+                      role="img"
+                      height="16"
+                      width="16"
+                      aria-hidden="false"
+                      class="Svg-sc-ytk21e-0 ilPTuf G7aCptcOZswI1fN6dGkO"
+                      viewBox="0 0 16 16"
+                      data-encore-id="icon"
+                    >
+                      <title>Pinned</title>
+                      <path
+                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                      ></path>
+                    </svg>
+                    <p>Playlist</p>
+                    <p>• 51 songs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-left-lib-card d-flex">
+                <img src="./resources/Group 1.svg" alt="Group 1.svg" />
+                <div
+                  class="pllc-info-div d-flex flex-column flex-wrap justify-content-around ms-2"
+                >
+                  <h6>Liked Songs</h6>
+                  <div class="d-flex flex-wrap">
+                    <!-- <i class="fa-solid fa-thumbtack"></i> -->
+                    <svg
+                      class="pinned-svg"
+                      role="img"
+                      height="16"
+                      width="16"
+                      aria-hidden="false"
+                      class="Svg-sc-ytk21e-0 ilPTuf G7aCptcOZswI1fN6dGkO"
+                      viewBox="0 0 16 16"
+                      data-encore-id="icon"
+                    >
+                      <title>Pinned</title>
+                      <path
+                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                      ></path>
+                    </svg>
+                    <p>Playlist</p>
+                    <p>• 51 songs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page right -->
+        <div class="page-right d-flex flex-column">
+          <!-- ROW1: buttons on top-->
+          <div
+            class="buttons-row-top d-flex flex-wrap justify-content-between sticky-top"
+          >
+            <div class="left-side-buttons d-flex">
+              <button class="angle-left-div">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="angle-right-div">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="right-side-buttons">
+              <button class="rsb-btn1">Explore Premium</button>
+              <button class="rsb-btn2">
+                <i class="fa-regular fa-circle-down"></i> Install App
+              </button>
+              <button class="rsb-btn3">
+                <i class="fa-regular fa-user"></i>
+              </button>
+            </div>
+          </div>
+          <!-- ROW2: All Contents (scrollable page) -->
+          <div class="pr-row-2 d-flex flex-column flex-wrap">
+            <!-- playlist & songs area  -->
+            <div
+              class="playlist-n-songs-cards-container d-flex flex-column flex-wrap"
+            >
+              <!-- heading, show all -->
+              <div
+                class="pns-stack-info d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <h5 class="pnssi-heading">Recently played</h5>
+                <p>Show all</p>
+              </div>
+              <!-- card stack -->
+              <div class="pns-cards-stack d-flex">
+                <!-- card -->
+                <div class="pns-card round-img-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist & songs area  -->
+            <div
+              class="playlist-n-songs-cards-container d-flex flex-column flex-wrap"
+            >
+              <!-- heading, show all -->
+              <div
+                class="pns-stack-info d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <h5 class="pnssi-heading">Recently played</h5>
+                <p>Show all</p>
+              </div>
+              <!-- card stack -->
+              <div class="pns-cards-stack d-flex">
+                <!-- card -->
+                <div class="pns-card round-img-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist & songs area  -->
+            <div
+              class="playlist-n-songs-cards-container d-flex flex-column flex-wrap"
+            >
+              <!-- heading, show all -->
+              <div
+                class="pns-stack-info d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <h5 class="pnssi-heading">Recently played</h5>
+                <p>Show all</p>
+              </div>
+              <!-- card stack -->
+              <div class="pns-cards-stack d-flex">
+                <!-- card -->
+                <div class="pns-card round-img-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="pns-card d-flex flex-column">
+                  <img
+                    aria-hidden="false"
+                    draggable="false"
+                    loading="lazy"
+                    src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f"
+                    data-testid="card-image"
+                    alt=""
+                    class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yYflTYbufy7rATGQiZfq Yn2Ei5QZn19gria6LjZj"
+                  />
+                  <div class="pns-card-detail d-flex flex-column">
+                    <h6>Shae Gill</h6>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FOOTER -->
+            <footer class="d-flex flex-column">
+              <div class="footer-row-top d-flex justify-content-between">
+                <table class>
+                  <thead>
+                    <tr>
+                      <th>Company</th>
+                      <th>Communities</th>
+                      <th>Useful links</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>About</td>
+                      <td>For Artists</td>
+                      <td>Support</td>
+                    </tr>
+                    <tr>
+                      <td>Jobs</td>
+                      <td>Developers</td>
+                      <td>Free Mobile App</td>
+                    </tr>
+                    <tr>
+                      <td>Records</td>
+                      <td>Advertising</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Investos</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Vendors</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="social d-flex">
+                  <button><i class="fa-brands fa-instagram"></i></button>
+                  <button><i class="fa-brands fa-twitter"></i></button>
+                  <button><i class="fa-brands fa-facebook"></i></button>
+                </div>
+              </div>
+              <div class="footer-row-bottom d-flex justify-content-between">
+                <div class="frb-col-1 d-flex">
+                  <p>Legal</p>
+                  <p>Privacy Center</p>
+                  <p>Privacy Policy</p>
+                  <p>Cookies</p>
+                  <p>About Ads</p>
+                  <p>Accessibility</p>
+                </div>
+                <div>
+                  <p>© 2023 Spotify AB</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="player webpage-bottom">
+        <div class="player-left d-flex align-items-center">
+          <img
+            src="./resources/ab67616d00001e02901adc84c6f8a93bc80499d7.jpg"
+            alt=""
+          />
+          <div class="wb-song-info d-flex flex-column justify-content-center">
+            <marquee behavior="alternate" scrollamount="1"
+              >Phir aur kya chahiye (from "Zara Hatke Zara Bachke")</marquee
+            >
+            <p><span>Sachin-Jigar</span>,<span> Arijit Singh</span></p>
+          </div>
+          <i class="fa-solid fa-heart"></i>
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd">
+              <path
+                d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                fill-rule="nonzero"
+              ></path>
+              <path d="M10 8h4v3h-4z"></path>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="player-mid d-flex flex-column justify-content-between align-items-center"
+        >
+          <div class="pmid-row-1 d-flex justify-content-center">
+            <button><i class="fa-solid fa-shuffle"></i></button>
+            <button><i class="fa-solid fa-backward-step"></i></button>
+            <button class="pmid-play-btn">
+              <img src="./resources/gridicons_play.png" alt="" />
+            </button>
+            <button><i class="fa-solid fa-forward-step"></i></button>
+            <button>
+              <svg
+                role="img"
+                height="16"
+                width="16"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                data-encore-id="icon"
+                class="Svg-sc-ytk21e-0 haNxPq"
+              >
+                <path
+                  d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="pmid-row-2 d-flex justify-content-center align-items-center"
+          >
+            <p>1:35</p>
+            <input type="range" class="timeline-slider" name="" id="" />
+            <p>3:00</p>
+          </div>
+        </div>
+        <div class="player-right d-flex justify-content-end align-items-center">
+          <svg
+            role="img"
+            height="16"
+            width="16"
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+            data-encore-id="icon"
+            class="Svg-sc-ytk21e-0 haNxPq"
+          >
+            <path d="M11.196 8 6 5v6l5.196-3z"></path>
+            <path
+              d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z"
+            ></path>
+          </svg>
+          <svg
+            role="img"
+            height="16"
+            width="16"
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+            data-encore-id="icon"
+            class="Svg-sc-ytk21e-0 haNxPq"
+          >
+            <path
+              d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"
+            ></path>
+          </svg>
+          <svg
+            role="presentation"
+            height="16"
+            width="16"
+            aria-hidden="true"
+            class="Svg-sc-ytk21e-0 haNxPq"
+            viewBox="0 0 16 16"
+            data-encore-id="icon"
+          >
+            <path
+              d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z"
+            ></path>
+            <path
+              d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+            ></path>
+          </svg>
+          <svg
+            role="presentation"
+            height="16"
+            width="16"
+            aria-hidden="true"
+            aria-label="Volume high"
+            id="volume-icon"
+            viewBox="0 0 16 16"
+            data-encore-id="icon"
+            class="Svg-sc-ytk21e-0 haNxPq"
+          >
+            <path
+              d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z"
+            ></path>
+            <path
+              d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127v1.55z"
+            ></path>
+          </svg>
+          <input type="range" class="volume-slider" name="" id="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
